@@ -3,7 +3,7 @@ services:
   node-red-atharv:
     image: nodered/node-red:latest
     ports:
-      - "50090:1880"
+      - "500900:1880"
     networks:
       - atharv_net
     volumes:
