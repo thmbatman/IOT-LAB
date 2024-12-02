@@ -27,6 +27,13 @@ services:
     volumes:
     - atharv_grafana_vol:/var/lib/grafana:rw
 
+   mosquitto-athrav:
+    image: eclipse-mosquitto:1.6.13
+    ports:
+      - "1883:1883"
+    networks:
+      - atharv_net
+
 
   
     
